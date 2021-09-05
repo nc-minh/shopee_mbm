@@ -2,6 +2,7 @@
     overflow: hidden;
 }
 
+/* header start */
 .app__header{
     height: 119px;
     width: 100%;
@@ -26,6 +27,7 @@
 .header__navbar__left__item{
     margin-right: 16px;
     position: relative;
+    color: var(--white-color);
 }
 
 .header__navbar__left__item-pseudo::after{
@@ -39,8 +41,14 @@
     background-color: var(--primary-color-hover);
 }
 
+.navbar__left__item--link:hover,
+.navbar__right__item--link:hover{
+    color: var(--text-white-hover);
+    cursor: pointer;
+}
 
 .navbar__left__item--link--icon{
+    margin-left: 5px;
     font-size: 1.6rem;
     text-decoration: none;
     color: var(--white-color);
@@ -76,3 +84,42 @@
     text-decoration: none;
     color: var(--white-color);
 }
+
+/* header bottom start */
+.header__navbar__bt{
+    display: flex;
+    align-items: center;
+    height: 85px;
+}
+
+.header__navbar__bt__logo{
+    padding-right: 40px;
+}
+
+.header__navbar__bt__logo svg{
+    width: 162px;
+    height: 50px;
+    fill: var(--white-color);
+}
+
+.header__navbar__bt__search-section{
+    width: 840px;
+    background-color: var(--white-color);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.bt__search-section--wrapper-search{
+    display: flex;
+}
+
+.bt__search-section--wrapper-search__input{
+    flex: 1;
+}
+
+.bt__search-section__searchbar{
+    background-color: var(--white-color);
+}
+/* header bottom end */
+
+/* header end */

@@ -1,11 +1,13 @@
 :root {
     --primary-color: #f53d2d;
-    --primary-color-hover: #f86d5c;
+    --primary-color-hover: #fb6445;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
     --star-gold-color: #ffce3e;
+
+    --text-white-hover: hsla(0,0%,100%,.7);
     
 
 }
@@ -20,3 +22,35 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+/* btn start */
+.btn{
+    outline: none;
+    border: none;
+    width: 60px;
+    height: 34px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btn.btn-primary{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn-primary:hover{
+    background-color: var(--primary-color-hover);
+}
+/* btn end */
+
+/* input start */
+.input{
+    outline: none;
+    border: none;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    color: var(--text-color);
+
+}
+/* input end */
