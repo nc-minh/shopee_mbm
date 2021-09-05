@@ -1,0 +1,11 @@
+.app{
+    overflow: hidden;
+    background-color: orange;
+}
+
+.c-2{
+    width: 200px;
+    height: 260px;
+    background-color: orchid;
+    border: 3px red solid;
+}
