@@ -1,11 +1,78 @@
 .app{
     overflow: hidden;
-    background-color: orange;
 }
 
-.c-2{
-    width: 200px;
-    height: 260px;
-    background-color: orchid;
-    border: 3px red solid;
+.app__header{
+    height: 119px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+}
+
+.header__navbar__left,
+.header__navbar__right{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header__navbar__left__item{
+    margin-right: 16px;
+    position: relative;
+}
+
+.header__navbar__left__item-pseudo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -8px;
+    display: block;
+    width: 1.5px;
+    height: 17px;
+    background-color: var(--primary-color-hover);
+}
+
+
+.navbar__left__item--link--icon{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.header__navbar__right__item{
+    margin-left: 16px;
+    position: relative;
+}
+
+.header__navbar__right__item-pseudo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -8px;
+    display: block;
+    width: 1.5px;
+    height: 17px;
+    background-color: var(--primary-color-hover);
+}
+
+.navbar__right__item--link--icon{
+    font-size: 1.6rem;
+}
+
+.header__navbar__left__item,
+.header__navbar__right__item{
+    font-size: 1.35rem;
+}
+
+.navbar__left__item--link,
+.navbar__right__item--link{
+    text-decoration: none;
+    color: var(--white-color);
 }
