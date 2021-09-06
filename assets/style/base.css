@@ -26,6 +26,12 @@ html {
     box-sizing: border-box;
 }
 
+.body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white-color-bg);
+}
+
 /* btn start */
 .btn{
     outline: none;
@@ -54,6 +60,7 @@ html {
     font-size: 1.4rem;
     padding: 0 1rem;
     color: var(--text-color);
+    width: 100%;
 
 }
 /* input end */

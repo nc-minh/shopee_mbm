@@ -431,3 +431,16 @@
         margin-left: 91.66667%;
     }
 }
+
+/* extra */
+@media (min-width: 1023px) and (max-width: 1239px){
+    .wide {
+        width: 984px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px){
+    .wide {
+        max-width: 860px;
+    }
+}

@@ -6,6 +6,7 @@
 .app__header{
     height: 119px;
     width: 100%;
+    padding: 1rem;
     background-color: var(--primary-color);
 }
 
@@ -346,8 +347,49 @@
 
 /* header end */
 
+
 .body{
-    width: 100%;
-    height: 500px;
-    background-color: lightpink;
+    padding: 0 1rem;
 }
+/* banner start */
+.body__banner{
+    padding-top: 3rem;
+    background-image: url('../images/bg_banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body__banner__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.body__banner__wrapper--left{
+    max-width: 796px;
+    height: 100%;
+}
+
+.body__banner__wrapper--left img{
+    width: 100%;
+    height: 100%;
+}
+
+.body__banner__wrapper--right{
+    padding-left: .5rem;
+    max-width: 398px;
+    height: 100%;
+}
+
+.body__banner__wrapper--right--item{
+    width: 100%;
+    height: 50%;
+}
+
+.body__banner__wrapper--right--item img{
+    width: 100%;
+    height: 100%;
+}
+/* banner end */
