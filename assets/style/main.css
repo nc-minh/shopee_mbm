@@ -95,7 +95,6 @@
     width: 186px;
     padding: 1rem;
     background-color: var(--white-color);
-    box-shadow: 2px 2px 10px var(--black-color);
 }
 
 .header__navbar__left__item--app::before{
@@ -139,6 +138,86 @@
     text-decoration: none;
     color: var(--white-color);
 }
+
+/* notify start */
+.navbar__right__item--link--parents{
+    position: relative;
+}
+
+.navbar__right__item--link--parents:hover .navbar__right__item--link__notify{
+    display: block;
+}
+
+.navbar__right__item--link__notify{
+    display: none;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 400px;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    transform-origin: calc(100% - 34px) top;
+    will-change: transform;
+    animation: headerNotifyGrowth ease-in .2s;
+}
+
+.navbar__right__item--link__notify::before{
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    content: '';
+    display: block;
+    border-color: transparent transparent var(--white-color) transparent;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.navbar__right__item--link__notify::after{
+    position: absolute;
+    top: -15px;
+    right: 0;
+    content: '';
+    display: block;
+    width: 30%;
+    height: 20px;
+}
+
+.navbar__right__item--link__notify--wrapper{
+    display: flex;
+    height: 280px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.navbar__right__item--link__notify--img{
+    width: 100px;
+    height: auto;
+}
+
+.navbar__right__item--link__notify__action{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: magenta;
+}
+
+.item--link__notify__action--item{
+    text-align: center;
+    width: 50%;
+    padding: 1rem 0;
+    background-color: var(--white-color-bg);
+    font-size: 1.4rem;
+}
+
+.item--link__notify__action--item:hover{
+    background-color: var(--white-color-bg-hover);
+    color: var(--primary-color);
+}
+/* notify end */
+
+
 
 /* header bottom start */
 .header__navbar__bt{
