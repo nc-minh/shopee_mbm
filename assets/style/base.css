@@ -6,6 +6,7 @@
     --white-color-bg-hover: #e9e9e9;
     --black-color: #000;
     --text-color: #333;
+    --text-color-primary: rgb(208, 1, 27);
     --text-color-white: hsla(0,0%,100%,.9);
     --border-color: #dbdbdb;
     --star-gold-color: #ffce3e;
@@ -28,7 +29,7 @@ html {
 
 .body{
     width: 100%;
-    height: 100vh;
+    height: 400vh;
     background-color: var(--white-color-bg);
 }
 

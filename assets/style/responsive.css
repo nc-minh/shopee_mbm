@@ -7,20 +7,11 @@
 
 /* mobile & tablet */
 @media (max-width: 1023px){
-    .body{
-        width: 100%;
-        height: 500px;
-        background-color: rebeccapurple;
-    }
+
 }
 
 /* mobile & mini tablet */
 @media (max-width: 880px){
-    .body{
-        width: 100%;
-        height: 500px;
-        background-color: rgb(4, 0, 255);
-    }
     /* header mini start */
     .app__header{
         display: none;
@@ -81,13 +72,33 @@
     /* header mini end */
     /* banner start */
     .body__banner{
-        padding-top: 1rem;
+        padding-top: .5rem;
     }
 
     .body__banner__wrapper--right{
         display: none;
     }
     /* banner end */
+
+    /* supper sale start */
+    .body__menu__supper-sale__wrapper__products{
+        padding: 0 1rem;
+    }
+
+    .body__menu__supper-sale__wrapper__products--item{
+        width: 110px;
+        min-height: 170px;
+    }
+    
+    .supper-sale__wrapper__products--item__wrapper{
+        width: 110px;
+        height: 170px;
+    }
+    
+    .supper-sale__wrapper__products--item__wrapper__img{
+        padding-top: 118px;
+    }
+    /* supper sale end */
 }
 
 /* tablet */
