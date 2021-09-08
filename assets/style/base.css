@@ -10,8 +10,10 @@
     --text-color-white: hsla(0,0%,100%,.9);
     --border-color: #dbdbdb;
     --star-gold-color: #ffce3e;
+    --discount-lable-color: #ffd839;
 
     --text-white-hover: hsla(0,0%,100%,.7);
+    --black-fade-hover: rgba(0, 0, 0, 0.1);
     
 
 }
@@ -83,3 +85,36 @@ html {
     }
 }
 /* transform scale end */
+
+/* lable discount start */
+
+.lable__discount-m{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    height: 46px;
+    background-color: var(--discount-lable-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+.lable__discount-m::before{
+    content: '';
+    position: absolute;
+    display: block;
+    border-width: 1px 23px 6px;
+    border-style: solid;
+    bottom: -6px;
+    border-color: var(--discount-lable-color) var(--discount-lable-color) transparent var(--discount-lable-color);
+}
+
+.lable__discount-m > .lable__discount--number{
+    color: var(--primary-color);
+    font-weight: 600;
+    padding-bottom: .2rem;
+}
+/* lable discount end */

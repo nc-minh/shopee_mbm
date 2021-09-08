@@ -81,8 +81,8 @@
     /* banner end */
 
     /* supper sale start */
-    .body__menu__supper-sale__wrapper__products{
-        padding: 0 1rem;
+    .body__menu__supper-sale__wrapper--hidden{
+        padding: 0 2rem;
     }
 
     .body__menu__supper-sale__wrapper__products--item{
@@ -99,6 +99,17 @@
         padding-top: 118px;
     }
     /* supper sale end */
+}
+
+/* PC - low quality */
+@media (min-width: 880px) and (max-width: 1223px){
+    .body__category__content__wrapper__list{
+        width: 260%;
+    }
+
+    .body__category__content__wrapper__item{
+        width: 20%;
+    }
 }
 
 /* tablet */
