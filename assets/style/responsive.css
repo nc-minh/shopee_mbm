@@ -98,6 +98,10 @@
     .supper-sale__wrapper__products--item__wrapper__img{
         padding-top: 118px;
     }
+    
+    .supper-sale__wrapper__products--item__wrapper--text{
+        font-size: 1.5rem;
+    }
     /* supper sale end */
 
     /* category start */
