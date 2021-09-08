@@ -587,6 +587,7 @@
 .body__category__content__wrapper{
     height: 100%;
     overflow: hidden;
+    background-color: var(--white-color);
 }
 
 .body__category__content__wrapper__list{
@@ -642,6 +643,7 @@
 }
 
 .body__category__content__wrapper__group--item__text{
+    padding: 0 .1rem;
     color: var(--text-color);
     font-size: 1.4rem;
     height: 3rem;

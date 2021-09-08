@@ -99,6 +99,33 @@
         padding-top: 118px;
     }
     /* supper sale end */
+
+    /* category start */
+    .body__category__content__wrapper{
+        padding: 0 1rem;
+        overflow: unset;
+    }
+
+    .body__category__content__wrapper__list{
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    .body__category__content__wrapper__item {
+        width: auto;
+    }
+
+    .body__category__content__wrapper__group--item__img{
+        width: 12rem;
+        padding-top: 11rem;
+        margin-top: 2rem;
+    }
+
+    .body__category__content__btn-left,
+    .body__category__content__btn-right{
+        display: none;
+    }
+    /* category end */
 }
 
 /* PC - low quality */
