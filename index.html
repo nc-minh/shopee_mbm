@@ -7,6 +7,7 @@
     <link href='assets/images/logo_shopee.ico' rel='icon' type='image/x-icon'/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/js/splide-2.4.21/splide-2.4.21/dist/css/splide.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -268,13 +269,13 @@
                                     </span>
                                     <a class="supper-sale__wrapper__products--item__wrapper" href="#">
                                         <div class="supper-sale__wrapper__products--item__wrapper__img" style="background-image: url('assets/images/pd-sale0.jpg')"></div>
-                                        <p class="supper-sale__wrapper__products--item__wrapper--text">$9000</p>
+                                        <p class="supper-sale__wrapper__products--item__wrapper--text">đ9.000</p>
                                     </a>
                                 </li>
                                 <li class="body__menu__supper-sale__wrapper__products--item">
                                     <a class="supper-sale__wrapper__products--item__wrapper" href="#">
                                         <div class="supper-sale__wrapper__products--item__wrapper__img" style="background-image: url('assets/images/pd-sale1.jpg')"></div>
-                                        <p class="supper-sale__wrapper__products--item__wrapper--text">$9000</p>
+                                        <p class="supper-sale__wrapper__products--item__wrapper--text">đ12.000</p>
                                     </a>
                                 </li>
                                 <li class="body__menu__supper-sale__wrapper__products--item">
@@ -284,7 +285,7 @@
                                     </span>
                                     <a class="supper-sale__wrapper__products--item__wrapper" href="#">
                                         <div class="supper-sale__wrapper__products--item__wrapper__img" style="background-image: url('assets/images/pd-sale2.jpg')"></div>
-                                        <p class="supper-sale__wrapper__products--item__wrapper--text">$9000</p>
+                                        <p class="supper-sale__wrapper__products--item__wrapper--text">đ56.000</p>
                                     </a>
                                 </li>
                                 <li class="body__menu__supper-sale__wrapper__products--item">
@@ -294,25 +295,25 @@
                                     </span>
                                     <a class="supper-sale__wrapper__products--item__wrapper" href="#">
                                         <div class="supper-sale__wrapper__products--item__wrapper__img" style="background-image: url('assets/images/pd-sale3.jpg')"></div>
-                                        <p class="supper-sale__wrapper__products--item__wrapper--text">$9000</p>
+                                        <p class="supper-sale__wrapper__products--item__wrapper--text">đ99.000</p>
                                     </a>
                                 </li>
                                 <li class="body__menu__supper-sale__wrapper__products--item">
                                     <a class="supper-sale__wrapper__products--item__wrapper" href="#">
                                         <div class="supper-sale__wrapper__products--item__wrapper__img" style="background-image: url('assets/images/pd-sale4.jpg')"></div>
-                                        <p class="supper-sale__wrapper__products--item__wrapper--text">$9000</p>
+                                        <p class="supper-sale__wrapper__products--item__wrapper--text">đ2.000</p>
                                     </a>
                                 </li>
                                 <li class="body__menu__supper-sale__wrapper__products--item">
                                     <a class="supper-sale__wrapper__products--item__wrapper" href="#">
                                         <div class="supper-sale__wrapper__products--item__wrapper__img" style="background-image: url('assets/images/pd-sale5.jpg')"></div>
-                                        <p class="supper-sale__wrapper__products--item__wrapper--text">$9000</p>
+                                        <p class="supper-sale__wrapper__products--item__wrapper--text">đ120.000</p>
                                     </a>
                                 </li>
                                 <li class="body__menu__supper-sale__wrapper__products--item">
                                     <a class="supper-sale__wrapper__products--item__wrapper" href="#">
                                         <div class="supper-sale__wrapper__products--item__wrapper__img" style="background-image: url('assets/images/pd-sale1.jpg')"></div>
-                                        <p class="supper-sale__wrapper__products--item__wrapper--text">$9000</p>
+                                        <p class="supper-sale__wrapper__products--item__wrapper--text">đ16.000</p>
                                     </a>
                                 </li>
 
@@ -333,16 +334,10 @@
 
                 <div class="body__category">
                     <h4 class="body__category--title">DANH MỤC</h4>
-                    <div class="body__category__content">
-                        <span class="body__category__content__btn-left" onclick="arrowCategoryLeft()">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </span>
-                        <span class="body__category__content__btn-right" onclick="arrowCategoryRight()">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </span>
-                        <div class="body__category__content__wrapper">
-                            <ul class="body__category__content__wrapper__list">
-                                <li class="body__category__content__wrapper__item">
+                    <div class="splide body__category__content">
+                        <div class="splide__track body__category__content__wrapper">
+                            <ul class="splide__list body__category__content__wrapper__list">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -358,7 +353,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -374,7 +369,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -390,7 +385,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -406,7 +401,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -422,7 +417,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -438,7 +433,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -454,7 +449,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -470,7 +465,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -486,7 +481,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -502,7 +497,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -518,7 +513,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -534,7 +529,7 @@
                                         </a>
                                     </div>
                                 </li>
-                                <li class="body__category__content__wrapper__item">
+                                <li class="body__category__content__wrapper__item splide__slide">
                                     <div class="body__category__content__wrapper__group">
                                         <a href="" class="body__category__content__wrapper__group--item">
                                             <div class="body__category__content__wrapper__group--item__wrapper">
@@ -554,9 +549,87 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- flash sale start -->
+                <div class="body__flash-sale">
+                    <div class="body__flash-sale__header">
+                        <div class="body__flash-sale__header__title">
+                            <div class="body__flash-sale__header--img" style="background-image: url('assets/images/flash-sale.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                            <div class="body__flash-sale__header--countdown-timer">00 00 45</div>
+                        </div>
+                        <a href="#" class="body__flash-sale__header__nextall">Xem Tất Cả
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="splide-1">
+                        <div class="splide__track body__flash-sale__header__wrapper">
+                            <ul class="splide__list body__flash-sale__header__list">
+                                <li class="splide__slide body__flash-sale__header__item">
+                                    <a href="" class="body__flash-sale__header__link">
+                                        <div class="body__flash-sale__header__img" style="background-image: url('assets/images/flash-sale-img0.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                                        <div class="body__flash-sale__header__price">đ9000</div>
+                                        <div class="body__flash-sale__header__process"></div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide body__flash-sale__header__item">
+                                    <a href="" class="body__flash-sale__header__link">
+                                        <div class="body__flash-sale__header__img" style="background-image: url('assets/images/flash-sale-img1.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                                        <div class="body__flash-sale__header__price">đ9000</div>
+                                        <div class="body__flash-sale__header__process"></div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide body__flash-sale__header__item">
+                                    <a href="" class="body__flash-sale__header__link">
+                                        <div class="body__flash-sale__header__img" style="background-image: url('assets/images/flash-sale-img2.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                                        <div class="body__flash-sale__header__price">đ9000</div>
+                                        <div class="body__flash-sale__header__process"></div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide body__flash-sale__header__item">
+                                    <a href="" class="body__flash-sale__header__link">
+                                        <div class="body__flash-sale__header__img" style="background-image: url('assets/images/flash-sale-img2.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                                        <div class="body__flash-sale__header__price">đ9000</div>
+                                        <div class="body__flash-sale__header__process"></div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide body__flash-sale__header__item">
+                                    <a href="" class="body__flash-sale__header__link">
+                                        <div class="body__flash-sale__header__img" style="background-image: url('assets/images/flash-sale-img2.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                                        <div class="body__flash-sale__header__price">đ9000</div>
+                                        <div class="body__flash-sale__header__process"></div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide body__flash-sale__header__item">
+                                    <a href="" class="body__flash-sale__header__link">
+                                        <div class="body__flash-sale__header__img" style="background-image: url('assets/images/flash-sale-img2.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                                        <div class="body__flash-sale__header__price">đ9000</div>
+                                        <div class="body__flash-sale__header__process"></div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide body__flash-sale__header__item">
+                                    <a href="" class="body__flash-sale__header__link">
+                                        <div class="body__flash-sale__header__img" style="background-image: url('assets/images/flash-sale-img2.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                                        <div class="body__flash-sale__header__price">đ9000</div>
+                                        <div class="body__flash-sale__header__process"></div>
+                                    </a>
+                                </li>
+                                <li class="splide__slide body__flash-sale__header__item">
+                                    <a href="" class="body__flash-sale__header__link">
+                                        <div class="body__flash-sale__header__img" style="background-image: url('assets/images/flash-sale-img2.png'); background-size: contain; background-repeat: no-repeat;"></div>
+                                        <div class="body__flash-sale__header__price">đ9000</div>
+                                        <div class="body__flash-sale__header__process"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- flash sale end -->
+                
             </div>
         </div>
     </div>
+    <script src="assets/js/splide-2.4.21/splide-2.4.21/dist/js/splide.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
