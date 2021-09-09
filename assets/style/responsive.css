@@ -104,6 +104,12 @@
     }
     /* supper sale end */
 
+    /* flash sale start */
+    .body__flash-sale__header__item{
+        width: 25%;
+    }
+    /* flash sale end */
+
 }
 
 /* PC - low quality */
@@ -118,5 +124,21 @@
 
 /* mobile */
 @media (max-width: 739px){
-    
+    .body__flash-sale__header--img{
+        width: 10rem;
+        padding-top: 3rem;
+    }
+
+    .body__flash-sale__header--countdown-timer{
+        margin-left: 1rem;
+    }
+}
+
+/* mobile low */
+@media (max-width: 580px){
+    /* flash sale start */
+    .body__flash-sale__header__item{
+        width: 33.3333333333333333%;
+    }
+    /* flash sale end */
 }

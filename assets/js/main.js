@@ -1,24 +1,25 @@
-
-new Splide( '.splide', {
-	perPage: 10,
-	rewind : true,
-} ).mount();
-
+var category = 10
 if(window.innerWidth < 880){
-    new Splide( '.splide', {
-        perPage: 5,
-        rewind : true,
-    } ).mount();
+    category = 5
 }
-
 if(window.innerWidth < 580){
-    new Splide( '.splide', {
-        perPage: 3,
-        rewind : true,
-    } ).mount();
+    category = 3
 }
-
-new Splide( '.splide-1', {
-	perPage: 6,
+new Splide( '.splide', {
+	perPage: category,
 	rewind : true,
 } ).mount();
+
+var flashSale = 6
+if(window.innerWidth < 880){
+    flashSale = 4
+}
+if(window.innerWidth < 580){
+    flashSale = 3
+}
+new Splide( '.splide-1', {
+	perPage: flashSale,
+	rewind : true,
+} ).mount();
+
+
