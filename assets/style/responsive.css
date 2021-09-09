@@ -132,6 +132,16 @@
     .body__flash-sale__header--countdown-timer{
         margin-left: 1rem;
     }
+
+    /* shop mall start */
+    .body__shop-mall__content__wrapper--img{
+        height: 16.6rem;
+    }
+
+    .body__shop-mall__content__wrapper--text{
+        font-size: 1.4rem;
+    }
+    /* shop mall end */
 }
 
 /* mobile low */

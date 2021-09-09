@@ -22,4 +22,15 @@ new Splide( '.splide-1', {
 	rewind : true,
 } ).mount();
 
+var mall = 4
+if(window.innerWidth < 880){
+    mall = 2
+}
+if(window.innerWidth < 739){
+    mall = 3
+}
+new Splide( '.splide-2', {
+	perPage: mall,
+	rewind : true,
+} ).mount();
 
