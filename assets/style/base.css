@@ -31,7 +31,7 @@ html {
 
 .body{
     width: 100%;
-    height: 3000px;
+    padding-bottom: 1000px;
     background-color: var(--white-color-bg);
 }
 
@@ -118,3 +118,32 @@ html {
     padding-bottom: .2rem;
 }
 /* lable discount end */
+
+/* lable top end */
+.lable__top-m{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    font-size: 1.4rem;
+}
+.lable__top-m::before{
+    content: '';
+    position: absolute;
+    display: block;
+    border-width: 10px 19px;
+    border-style: solid;
+    bottom: -20px;
+    border-color: var(--primary-color) transparent transparent transparent;
+
+
+}
+/* lable top end */
+

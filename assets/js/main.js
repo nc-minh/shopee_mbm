@@ -34,3 +34,15 @@ new Splide( '.splide-2', {
 	rewind : true,
 } ).mount();
 
+var topp = 6
+if(window.innerWidth < 880){
+    topp = 4
+}
+if(window.innerWidth < 739){
+    topp = 3
+}
+new Splide( '.splide-3', {
+	perPage: topp,
+	rewind : true,
+} ).mount();
+

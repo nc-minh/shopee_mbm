@@ -178,6 +178,12 @@
         font-size: 1.2rem;
     }
     /* shop mall end */
+
+    /* top search start */
+    .body__trending-search__content__wrap{
+        flex-direction: column;
+    }
+    /* top search end    */
 }
 
 /* mobile low */
