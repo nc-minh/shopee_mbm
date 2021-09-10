@@ -803,6 +803,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    text-decoration: none;
 }
 
 .body__banner-sale__container__item{
@@ -836,6 +837,10 @@
     align-items: center;
     font-size: 1.6rem;
     position: relative;
+}
+
+.body__shop-mall__title__wapper{
+    display: flex;
 }
 
 .body__shop-mall__title__link{
@@ -902,6 +907,7 @@
 .body__shop-mall__content__wrapper--link{
     display: block;
     height: 50%;
+    width: 100%;
     text-decoration: none;
     position: relative;
     border: .2rem solid var(--border-color);
@@ -909,7 +915,9 @@
 
 .body__shop-mall__content__wrapper--img{
     padding-top: 100%;
+    width: 100%;
     height: 21.6rem;
+    background-position: center;
 }
 
 .body__shop-mall__content__wrapper--text{
@@ -921,5 +929,8 @@
     bottom: .5rem;
     left: 0;
     right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* shop mall end */
