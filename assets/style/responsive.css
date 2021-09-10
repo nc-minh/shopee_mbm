@@ -140,6 +140,14 @@
     }
     /* shop mall end */
 
+    .footer__regional-license__wrapper{
+        flex-direction: column;
+    }
+
+    .footer__regional-license__c{
+        padding-bottom: 1rem;
+    }
+
 }
 
 /* PC - low quality */
