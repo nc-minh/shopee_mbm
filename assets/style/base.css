@@ -18,6 +18,8 @@
     --black-fade-hover: rgba(0, 0, 0, 0.1);
     
 
+    --height-header: 119px;
+    --height-header-mini: 54px;
 }
 
 * {
@@ -88,7 +90,6 @@ html {
 /* transform scale end */
 
 /* lable discount start */
-
 .lable__discount-m{
     position: absolute;
     top: 0;
@@ -119,6 +120,29 @@ html {
     padding-bottom: .2rem;
 }
 /* lable discount end */
+
+/* lable love start */
+.lable__love-m{
+    position: absolute;
+    top: 1rem;
+    left: -.5rem;
+    width: 6rem;
+    height: 1.6rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    text-align: center
+}
+.lable__love-m::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border-top: 3px solid var(--primary-color);
+    border-left: 3px solid transparent;
+    filter: brightness(60%);
+}
+/* lable love end */
 
 /* lable top end */
 .lable__top-m{
@@ -154,3 +178,27 @@ html {
     padding-right: 1rem;
 }
 /* padding end */
+
+/* scrollbar start */
+/* width */
+::-webkit-scrollbar {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    border-radius: 1rem;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, #7e05a3 0%, #7e05a3  51%, #7e05a3  100%);
+  }
+/* scrollbar end */

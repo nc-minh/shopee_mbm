@@ -23,7 +23,10 @@
 
     .app__header__mini{
         width: 100%;
+        height: var(--height-header-mini);
         background-color: var(--primary-color);
+        position: fixed;
+        z-index: 10;
     }
 
     .header__mini__wrapper{
@@ -77,6 +80,7 @@
     /* banner start */
     .body__banner{
         padding-top: .5rem;
+        margin-top: var(--height-header-mini);
     }
 
     .body__banner__wrapper--right{
