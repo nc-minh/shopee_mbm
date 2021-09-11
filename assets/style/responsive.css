@@ -7,6 +7,12 @@
     .body__shop-mall__title__wapper--mobile{
         display: none;
     }
+
+    /* nav bottom start */
+    .app__header__nav-bottom-mini{
+        display: none;
+    }
+    /* nav bottom end */
 }
 
 /* mobile & tablet */
@@ -150,6 +156,16 @@
 
     .footer__regional-license__c{
         padding-bottom: 1rem;
+    }
+
+    /* nav bottom start */
+    .app__header__nav-bottom-mini{
+        display: block;
+    }
+    /* nav bottom end */
+
+    .footer{
+        margin-bottom: var(--height-header-mini);
     }
 
 }
