@@ -440,6 +440,10 @@
     cursor: pointer;
 }
 
+.body__banner__wrapper--left--slide__dot-item.active{
+    background-color: blueviolet;
+}
+
 .body__banner__wrapper--left__wrapper{
     display: flex;
     width: 100%;

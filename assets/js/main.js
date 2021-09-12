@@ -110,11 +110,20 @@ function handleSlider(n){
     }else if(n == -1){
         sliderShowNext()
     }
+
+    console.log('check index', index);
+    for (let i = 0; i < dotItem.length; i++) {
+        dotItem[i].style.backgroundColor = 'white'
+        dotItem[index].style.backgroundColor = 'red'
+    }
+
+
+
 }
 
-// setInterval(()=>{
-//     sliderShowNext()
-// }, 2000)
+setInterval(()=>{
+    handleSlider(-1)
+}, 2000)
 
 
 
