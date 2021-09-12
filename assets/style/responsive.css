@@ -92,6 +92,10 @@
     .body__banner__wrapper--right{
         display: none;
     }
+    
+    .body__banner__wrapper--left--slide{
+        width: 100%;
+    }
     /* banner end */
 
     /* supper sale start */

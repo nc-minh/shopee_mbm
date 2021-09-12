@@ -46,3 +46,77 @@ new Splide( '.splide-3', {
 	rewind : true,
 } ).mount();
 
+
+const slider = document.querySelector('.body__banner__wrapper--left--slide')
+const list = document.querySelector('.body__banner__wrapper--left__wrapper')
+const sliderItems = document.querySelectorAll('.body__banner__wrapper--left__wrapper--item')
+const prevBtn = document.querySelector('.body__banner__wrapper--left--prev')
+const nextBtn = document.querySelector('.body__banner__wrapper--left--next')
+const dotItem = document.querySelectorAll('.body__banner__wrapper--left--slide__dot-item')
+
+// var itemWidth = sliderItems[0].offsetWidth
+var itemWidth = 100
+const sliderItemLength = sliderItems.length
+let positionX = 0
+let index = 0
+
+// itemWidth = ((itemWidth * sliderItemLength) / 100)
+
+console.log(sliderItemLength);
+console.log(itemWidth);
+console.log(positionX);
+
+
+
+
+function sliderShowPrev(){
+    index--
+    if(index < 0 ){
+        list.style = `transform: translateX(-${(itemWidth*sliderItemLength) - itemWidth}%)`
+        index = sliderItemLength - 1
+        positionX = ((itemWidth*sliderItemLength) - itemWidth)
+        console.log('trong if');
+    }else{
+        console.log('index', index);
+        positionX = (positionX - itemWidth)
+        list.style = `transform: translateX(-${positionX}%)`
+        console.log(positionX);
+        console.log('next');
+        console.log('trong else');
+    }
+}
+
+function sliderShowNext(){
+    index++
+    console.log(index);
+    if(index >= sliderItemLength){
+        list.style = `transform: translateX(${0}%)`
+        index = 0
+        positionX = 0
+    }else{
+        positionX = positionX + itemWidth
+        console.log(itemWidth);
+        list.style = `transform: translateX(-${positionX}%)`
+        console.log(positionX);
+        console.log('next');
+    }
+    
+    
+}
+
+function handleSlider(n){
+    if(n == 1){
+        sliderShowPrev()
+    }else if(n == -1){
+        sliderShowNext()
+    }
+}
+
+// setInterval(()=>{
+//     sliderShowNext()
+// }, 2000)
+
+
+
+
+

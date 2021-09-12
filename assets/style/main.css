@@ -367,19 +367,101 @@
     
 }
 
-.body__banner__wrapper--left{
-    max-width: 796px;
+.body__banner__wrapper--left--slide{
+    position: relative;
+    /* max-width: 796px; */
+    width: 65%;
     height: 100%;
 }
 
-.body__banner__wrapper--left img{
+.body__banner__wrapper--left{
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: flex;
+    transition: all 500ms ease 0s;
+    overflow: hidden;
+    position: relative;
+}
+
+.body__banner__wrapper--left--prev,
+.body__banner__wrapper--left--next{
+    opacity: .7;
+    background: #ccc;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 9999px;
+    box-shadow: 0 1px 12px 0 rgb(0 0 0 / 12%);
+    transition: all .1s cubic-bezier(.4,0,.6,1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.body__banner__wrapper--left--prev{
+    left: 0;
+}
+
+.body__banner__wrapper--left--next{
+    right: 0;
+}
+
+.body__banner__wrapper--left--left:hover,
+.body__banner__wrapper--left--right:hover{
+    opacity: 1;
+}
+
+.body__banner__wrapper--left--slide__dot{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+}
+
+.body__banner__wrapper--left--slide__dot-item{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #ccc;
+    opacity: .8;
+    border: .1rem solid var(--black-color);
+    border-radius: 9999px;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.body__banner__wrapper--left__wrapper{
+    display: flex;
+    width: 100%;
+    transition: all 500ms ease 0s;
+    position: relative;
+}
+
+.body__banner__wrapper--left__wrapper--item{
+    width: 100%;
+    height: auto;
+    flex: 1 0 100%;
+}
+
+.body__banner__wrapper--left__wrapper--item img{
+    width: 100%;
+    height: auto;
 }
 
 .body__banner__wrapper--right{
     padding-left: .5rem;
-    max-width: 398px;
+    /* max-width: 398px; */
+    width: 35%;
     height: 100%;
 }
 
@@ -414,6 +496,7 @@
 
 .body__menu-extra__wrapper--item{
     width: 100px;
+    height: auto;
     text-align: center;
     margin: 1rem;
     cursor: pointer;
