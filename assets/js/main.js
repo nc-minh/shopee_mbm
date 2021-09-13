@@ -62,9 +62,9 @@ let index = 0
 
 // itemWidth = ((itemWidth * sliderItemLength) / 100)
 
-console.log(sliderItemLength);
-console.log(itemWidth);
-console.log(positionX);
+// console.log(sliderItemLength);
+// console.log(itemWidth);
+// console.log(positionX);
 
 
 
@@ -75,30 +75,30 @@ function sliderShowPrev(){
         list.style = `transform: translateX(-${(itemWidth*sliderItemLength) - itemWidth}%)`
         index = sliderItemLength - 1
         positionX = ((itemWidth*sliderItemLength) - itemWidth)
-        console.log('trong if');
+        // console.log('trong if');
     }else{
-        console.log('index', index);
+        // console.log('index', index);
         positionX = (positionX - itemWidth)
         list.style = `transform: translateX(-${positionX}%)`
-        console.log(positionX);
-        console.log('next');
-        console.log('trong else');
+        // console.log(positionX);
+        // console.log('next');
+        // console.log('trong else');
     }
 }
 
 function sliderShowNext(){
     index++
-    console.log(index);
+    // console.log(index);
     if(index >= sliderItemLength){
         list.style = `transform: translateX(${0}%)`
         index = 0
         positionX = 0
     }else{
         positionX = positionX + itemWidth
-        console.log(itemWidth);
+        // console.log(itemWidth);
         list.style = `transform: translateX(-${positionX}%)`
-        console.log(positionX);
-        console.log('next');
+        // console.log(positionX);
+        // console.log('next');
     }
     
     
@@ -111,21 +111,20 @@ function handleSlider(n){
         sliderShowNext()
     }
 
-    console.log('check index', index);
+    // console.log('check index', index);
     for (let i = 0; i < dotItem.length; i++) {
         dotItem[i].style.backgroundColor = 'white'
         dotItem[index].style.backgroundColor = 'red'
     }
-
-
-
 }
 
 setInterval(()=>{
     handleSlider(-1)
 }, 2000)
 
-
+function dotNext(n){
+    list.style = `transform: translateX(-${n*100}%)`
+}
 
 
 
