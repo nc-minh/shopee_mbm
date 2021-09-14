@@ -105,5 +105,59 @@ function dotNext(n){
     }
 }
 
+function handleSlideShow(n){
+    const slide = document.querySelector('.shop-mall__content__slider--wrapper--slide')
+    const items = document.querySelectorAll('.shop-mall__content__slider--wrapper--item')
+    console.log(slide.length);
+
+    console.log('đã chạy vào hàm hanle');
+    let Px = 0
+    let index = 0
+
+    if(n == -1){
+        console.log('chạy vào -1');
+        Px = Px + 100
+        slide.style = `transform: translateX(-${Px}%)`
+
+        console.log('px : ', Px);
+    }
+
+    console.log(itemsLength)
+
+}
+
+
+// cách hai ngắn hơn
+var slideIndex = 0;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    const items = document.querySelectorAll('.shop-mall__content__slider--wrapper--item')
+    let index = slideIndex += n
+    console.log(index, 'index');
+    if(index >= items.length){
+        slideIndex = 0
+        index = 0
+        console.log('lặp....');
+    }
+    if(index < 0){
+        slideIndex = items.length - 1
+        index = items.length - 1
+    }
+    showDivs(index);
+    console.log('slideIndex ', slideIndex);
+}
+
+function showDivs(n) {
+    console.log('n cuối: ', n);
+    const slide = document.querySelector('.shop-mall__content__slider--wrapper--slide')
+
+    slide.style = `transform: translateX(-${n*100}%)`
+    
+}
+
+setInterval(()=>{
+    plusDivs(1)
+}, 2000)
 
 
