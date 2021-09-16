@@ -71,27 +71,24 @@ function plusDivsSlide(n) {
 function showDivsSlide(n) {
     console.log('n cuối: ', n);
     const slide0 = document.querySelector('.body__banner__wrapper--left__wrapper')
+    const sliderItems = document.querySelectorAll('.body__banner__wrapper--left--slide__dot-item')
     
     slide0.style = `transform: translateX(-${n*100}%)`
 
-    const sliderItems = document.querySelectorAll('.body__banner__wrapper--left--slide__dot-item')
     
     sliderItems.forEach(element => {
         element.style.backgroundColor = '#ccc'
     })
     sliderItems[n].style.backgroundColor = "#f53d2d";
-    
-    
 }
 
 function dotNext(n){
     showDivsSlide(n)
-    
 }
 
-// setInterval(()=>{
-//     showDivsSlide(1)
-// }, 2000)
+setInterval(()=>{
+    plusDivsSlide(1)
+}, 2000)
 
 
 // cách hai ngắn hơn
