@@ -47,63 +47,51 @@ new Splide( '.splide-3', {
 } ).mount();
 
 
-const list = document.querySelector('.body__banner__wrapper--left__wrapper')
-const sliderItems = document.querySelectorAll('.body__banner__wrapper--left__wrapper--item')
-const dotItem = document.querySelectorAll('.body__banner__wrapper--left--slide__dot-item')
-var itemWidth = 100
-const sliderItemLength = sliderItems.length
-let positionX = 0
-let index = 0
+// cách hai ngắn hơn
+var slideIndex0 = 0;
+showDivsSlide(slideIndex0);
 
-
-
-function sliderShowPrev(){
-    index--
-    if(index < 0 ){
-        list.style = `transform: translateX(-${(itemWidth*sliderItemLength) - itemWidth}%)`
-        index = sliderItemLength - 1
-        positionX = ((itemWidth*sliderItemLength) - itemWidth)
-    }else{
-        positionX = (positionX - itemWidth)
-        list.style = `transform: translateX(-${positionX}%)`
-    }
-}
-function sliderShowNext(){
-    index++
-    // console.log(index);
-    if(index >= sliderItemLength){
-        list.style = `transform: translateX(${0}%)`
+function plusDivsSlide(n) {
+    const sliderItems = document.querySelectorAll('.body__banner__wrapper--left__wrapper--item')
+    let index = slideIndex0 += n
+    console.log(index, 'index');
+    if(index >= sliderItems.length){
+        slideIndex0 = 0
         index = 0
-        positionX = 0
-    }else{
-        positionX = positionX + itemWidth
-        list.style = `transform: translateX(-${positionX}%)`
+        console.log('lặp....');
     }
+    if(index < 0){
+        slideIndex0 = sliderItems.length - 1
+        index = sliderItems.length - 1
+    }
+    showDivsSlide(index);
+    console.log('slideIndex0 ', slideIndex0);
 }
 
-function handleSlider(n){
-    if(n == 1){
-        sliderShowPrev()
-    }else if(n == -1){
-        sliderShowNext()
-    }
-    for (let i = 0; i < dotItem.length; i++) {
-        dotItem[i].style.backgroundColor = 'white'
-        dotItem[index].style.backgroundColor = 'red'
-    }
-}
+function showDivsSlide(n) {
+    console.log('n cuối: ', n);
+    const slide0 = document.querySelector('.body__banner__wrapper--left__wrapper')
+    
+    slide0.style = `transform: translateX(-${n*100}%)`
 
-setInterval(()=>{
-    handleSlider(-1)
-}, 2000)
+    const sliderItems = document.querySelectorAll('.body__banner__wrapper--left--slide__dot-item')
+    
+    sliderItems.forEach(element => {
+        element.style.backgroundColor = '#ccc'
+    })
+    sliderItems[n].style.backgroundColor = "#f53d2d";
+    
+    
+}
 
 function dotNext(n){
-    list.style = `transform: translateX(-${n*100}%)`
-    for (let i = 0; i < dotItem.length; i++) {
-        dotItem[i].style.backgroundColor = 'white'
-        dotItem[n].style.backgroundColor = 'red'
-    }
+    showDivsSlide(n)
+    
 }
+
+// setInterval(()=>{
+//     showDivsSlide(1)
+// }, 2000)
 
 
 // cách hai ngắn hơn
@@ -113,24 +101,23 @@ showDivs(slideIndex);
 function plusDivs(n) {
     const items = document.querySelectorAll('.shop-mall__content__slider--wrapper--item')
     let index = slideIndex += n
-    console.log(index, 'index');
+    // console.log(index, 'index');
     if(index >= items.length){
         slideIndex = 0
         index = 0
-        console.log('lặp....');
+        // console.log('lặp....');
     }
     if(index < 0){
         slideIndex = items.length - 1
         index = items.length - 1
     }
     showDivs(index);
-    console.log('slideIndex ', slideIndex);
+    // console.log('slideIndex ', slideIndex);
 }
 
 function showDivs(n) {
-    console.log('n cuối: ', n);
+    // console.log('n cuối: ', n);
     const slide = document.querySelector('.shop-mall__content__slider--wrapper--slide')
-
     slide.style = `transform: translateX(-${n*100}%)`
     
 }
