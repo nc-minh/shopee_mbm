@@ -1225,14 +1225,19 @@
     height: auto;
 }
 
+.body__top-search__content__wrapper{
+    padding: 1rem .5rem;
+    flex: 1;
+}
+
 .body__top-search__content--text{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 5rem;
     font-size: 1.6rem;
     color: var(--text-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-align: center;
 }
 /* top search end */
 
